@@ -74,7 +74,9 @@ class _PasswordScreenState extends State<PasswordScreen> {
           title: const Text("Sign up"),
         ),
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: Sizes.size36),
+          padding: const EdgeInsets.symmetric(
+            horizontal: Sizes.size36,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -156,6 +158,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
                 onTap: _onSubmit,
                 child: FormButton(
                   disabled: !_isPasswordValid(),
+                  btnText: 'Next',
                 ),
               ),
             ],
